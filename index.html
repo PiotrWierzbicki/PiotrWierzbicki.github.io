@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mieszanka paliwowa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3710696c33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <h1>licznik mieszanki paliwowej</h1>
+            <div class="main-info"> 
+                <div class="fuelRatio">
+                    <h5 class="fuelText">Proporcje mieszanki:</h5>
+                    <label for="fuelRatioSelector">1:</label>
+					<select class="fuelRatioSelector" name="fuelRatioSelector" id="fuelRatioSelector">
+                        <option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+						<option value="35">35</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+					</select>         
+                </div>
+                <img src="./img/20.jpg" alt="Obrazek przedstawiający mieszankę 20" class="photo">
+				<div class="fuelRatio">
+					<h5 class="fuelText">Ilość mieszanki:</h5>
+					<input placeholder="W litrach" type="number" min="0" id="inputNum" name="inputNum">
+                    <p class="warning"></p>
+				</div>
+            </div>
+        </div>
+		<div class="center">
+			<button>Oblicz!</button>
+		</div>
+        <div class="bottom">
+            <div class="headings">
+                <p>Olej:</p>
+                <p>Benzyna:</p>
+                <p>Suma mieszanki paliwowej:</p>
+            </div>
+            <div class="oil-info">
+                <p class="oil"></p>
+                <p class="gasoline"></p>
+                <p class="fuel"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
